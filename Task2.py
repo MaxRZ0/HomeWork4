@@ -44,6 +44,7 @@ for value in values:
         sym2 = value.find('}')
         raw_set = value[sym1 + 1:sym2].replace(' ', '').split(',')
         if len(raw_set) == len(set(raw_set)):
+
             res_dict[value] = set
             continue
     if '(' and ')' in value:
